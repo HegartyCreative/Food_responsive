@@ -52,11 +52,61 @@ nav li a:hover {
 
 /* main section */
 
-main {
-  width: 70%;
-  margin: 0 auto;
-}
-
 h1 {
   text-align: center;
+  color: orange;
+  font-size: 32px;
+  margin: 20px 0px 0px 0px;
+}
+
+#latest_products {
+  width: 80%;
+  margin: 30px auto;
+}
+
+#latest_products ul {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+  margin: 0;
+  padding: 0;
+}
+
+.food_items {
+  background-color: lightblue;
+  border-radius: 6px;
+  overflow: hidden;
+}
+
+.food_items img {
+  height: 240px;
+  width: 100%;
+  object-fit: cover;
+}
+
+.food_item_content {
+  background-color: lightblue;
+  text-align: center;
+  padding: 10px 0px 30px 0px;
+}
+
+.food_item_content h2 {
+  margin: 0px 0px 20px 0px;
+  color: rgb(44, 41, 38);
+}
+
+.food_item_content a {
+  text-decoration: none;
+}
+
+.btn {
+  background-color: orange;
+  color: white;
+  border-radius: 4px;
+  padding: 8px 24px;
+}
+
+.btn:hover {
+  background-color: white;
+  color: orange;
 }
