@@ -129,11 +129,11 @@ and less than 1300px the h2 heading will reduce to 1.2rem*/
     margin: 1.6rem 0px 0px 0px;
   }
 
-  nav li a {
-    display: none;
-  }
-
   #latest_products ul {
     grid-template-columns: 100%;
+  }
+
+  nav li a {
+    display: none;
   }
 }
