@@ -8,12 +8,12 @@ body {
 /* header */
 
 #main_header {
-  height: 80px;
+  height: 5rem;
   display: flex;
   justify-content: space-between;
   align-items: center;
   background: rgb(29, 26, 24);
-  padding: 0px 20px;
+  padding: 0px 5%;
 }
 
 #main_header a {
@@ -22,7 +22,7 @@ body {
 
 #logo {
   color: orange;
-  font-size: 24px;
+  font-size: 1.5rem;
   text-transform: uppercase;
   font-weight: bold;
 }
@@ -42,8 +42,9 @@ nav li a {
   text-decoration: none;
   color: orange;
   list-style-type: none;
-  margin: 30px;
-  padding: 2px 6px;
+  margin: 1rem;
+  padding: 0.5rem 0.75rem;
+  font-size: 1.25rem;
 }
 
 nav li a:hover {
@@ -55,19 +56,19 @@ nav li a:hover {
 h1 {
   text-align: center;
   color: orange;
-  font-size: 32px;
-  margin: 20px 0px 0px 0px;
+  font-size: 3rem;
+  margin: 2rem 0px 0px 0px;
 }
 
 #latest_products {
-  width: 80%;
-  margin: 30px auto;
+  width: 60%;
+  margin: 2rem auto;
 }
 
 #latest_products ul {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 16px;
+  gap: 1rem;
   margin: 0;
   padding: 0;
 }
@@ -79,7 +80,7 @@ h1 {
 }
 
 .food_items img {
-  height: 240px;
+  height: 15rem;
   width: 100%;
   object-fit: cover;
 }
@@ -87,12 +88,14 @@ h1 {
 .food_item_content {
   background-color: lightblue;
   text-align: center;
-  padding: 10px 0px 30px 0px;
+  padding: 0.5rem 0 2.2rem 0;
+  list-style-type: none;
 }
 
 .food_item_content h2 {
-  margin: 0px 0px 20px 0px;
+  margin: 0px 0px 1.25rem 0px;
   color: rgb(44, 41, 38);
+  font-size: 1.75rem;
 }
 
 .food_item_content a {
@@ -109,4 +112,28 @@ h1 {
 .btn:hover {
   background-color: white;
   color: orange;
+}
+
+/* Media Queries */
+
+/* Below at a width less than 1000px the screen will go blue 
+and less than 1300px the h2 heading will reduce to 1.2rem*/
+
+@media (max-width: 48rem) {
+  body {
+    background-color: lightgrey;
+  }
+
+  h1 {
+    font-size: 2rem;
+    margin: 1.6rem 0px 0px 0px;
+  }
+
+  nav li a {
+    display: none;
+  }
+
+  #latest_products ul {
+    grid-template-columns: 100%;
+  }
 }
